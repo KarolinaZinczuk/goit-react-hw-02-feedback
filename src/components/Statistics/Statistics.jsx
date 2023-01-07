@@ -22,7 +22,6 @@ class Statistics extends Component {
                 )}
             </>
         );
-
     }
 }
 
