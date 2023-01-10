@@ -3,16 +3,16 @@ import PropTypes from "prop-types";
 import styles from "./Notification.module.css";
 
 class Notification extends Component {
+    static propTypes = {
+        message: PropTypes.string,    
+    }
+    
     render() {
         const { message } = this.props;
         return (
-            <p>{message}</p>
+            <p className={styles.paragraph}>{message}</p>
         ); 
     }
 }
-
-Notification.propTypes = {
-    message: PropTypes.string,
-};
 
 export default Notification;
