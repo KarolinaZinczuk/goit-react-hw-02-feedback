@@ -6,3 +6,9 @@
 .item {
     text-transform: capitalize;
 }
+
+.title {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
