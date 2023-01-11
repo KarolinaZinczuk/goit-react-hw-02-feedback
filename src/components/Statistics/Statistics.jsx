@@ -16,7 +16,7 @@ class Statistics extends Component {
         const { good, neutral, bad, total, positivePercentage } = this.props;
         return (
             <>
-                <h2>Statistics</h2>
+                <h2 className={styles.title}>Statistics</h2>
                 {total === 0 ? (
                     <Notification message="There is no feedback" />
                 ) : (
