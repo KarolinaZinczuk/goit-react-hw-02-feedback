@@ -3,12 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./FeedbackOptions.module.css";
 
 
-class FeedbackOptions extends Component {
-    static propTypes = {
-        options: PropTypes.arrayOf(PropTypes.string),
-        onLeaveFeedback: PropTypes.func,
-    };
-    
+class FeedbackOptions extends Component {  
     render() {
         const { options, onLeaveFeedback } = this.props;
         return (
@@ -29,5 +24,10 @@ class FeedbackOptions extends Component {
         );
     }
 }
+
+FeedbackOptions.propTypes = {
+    options: PropTypes.arrayOf(PropTypes.string),
+    onLeaveFeedback: PropTypes.func,
+};
 
 export default FeedbackOptions;
