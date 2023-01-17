@@ -4,14 +4,6 @@ import styles from "./Statistics.module.css";
 import Notification from "components/Notification/Notification";
 
 class Statistics extends Component {
-    static propTypes = {
-        good: PropTypes.number,
-        neutral: PropTypes.number,
-        bad: PropTypes.number,
-        total: PropTypes.number,
-        positivePercentage: PropTypes.number,
-    };
-
     render() {
         const { good, neutral, bad, total, positivePercentage } = this.props;
         return (
@@ -32,5 +24,13 @@ class Statistics extends Component {
         );
     }
 }
+
+Statistics.propTypes = {
+    good: PropTypes.number,
+    neutral: PropTypes.number,
+    bad: PropTypes.number,
+    total: PropTypes.number,
+    positivePercentage: PropTypes.number,
+};
 
 export default Statistics;
